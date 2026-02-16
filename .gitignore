@@ -1,0 +1,7 @@
+.env
+kairos_key.key
+kairos_salt.bin
+kairos_memory.json
+venv/
+__pycache__/
+*.log
