@@ -1,0 +1,129 @@
+# 🚀 KAIROS Quick Start Guide
+
+Get up and running with Kairos AI in 5 minutes!
+
+## What You Need
+- Python 3.8+ installed on your computer
+- A Google Gemini API key (free from https://makersuite.google.com/app/apikey)
+- 5 minutes of your time
+
+## Installation (Choose Your Method)
+
+### Method 1: Automated Setup (Recommended)
+
+**On Windows:**
+```bash
+# Double-click setup.bat
+# OR run in Command Prompt:
+setup.bat
+```
+
+**On Mac/Linux:**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+### Method 2: Manual Setup
+
+1. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+2. **Configure API key:**
+```bash
+# Copy the template
+cp .env.example .env
+
+# Edit .env and add your key:
+# GEMINI_API_KEY=your_actual_api_key_here
+```
+
+## Running Kairos
+
+```bash
+python main.py
+```
+
+Then open your browser to: **http://localhost:5000**
+
+## First Time Setup Checklist
+
+- [ ] Python 3.8+ installed
+- [ ] Downloaded all project files
+- [ ] Ran `pip install -r requirements.txt`
+- [ ] Created `.env` file with your Gemini API key
+- [ ] Ran `python main.py`
+- [ ] Opened browser to http://localhost:5000
+- [ ] Started chatting with Kairos!
+
+## Troubleshooting
+
+**Can't run python?**
+- Try `python3` instead of `python`
+- Make sure Python is in your PATH
+
+**API key error?**
+- Check that `.env` file exists
+- Verify your API key is correct
+- Ensure no extra spaces in `.env`
+
+**Port 5000 already in use?**
+- Edit `main.py` and change the port number in the last line
+
+## What's Included
+
+| File | Purpose |
+|------|---------|
+| `main.py` | Main application (enhanced version) |
+| `requirements.txt` | Python dependencies |
+| `.env.example` | Configuration template |
+| `README.md` | Full documentation |
+| `setup.sh` / `setup.bat` | Automated setup scripts |
+
+## Key Improvements Over Original
+
+✅ **Security**: API keys in environment variables, not code  
+✅ **UI**: Beautiful celestial theme with animations  
+✅ **Error Handling**: Graceful failures with helpful messages  
+✅ **Memory**: Smart conversation history with encryption  
+✅ **Code Quality**: Modular, well-documented, maintainable  
+✅ **Logging**: Track issues and monitor usage  
+✅ **Features**: Loading states, input validation, health checks  
+
+## Next Steps
+
+1. **Customize the AI**: Edit the system prompt in `main.py`
+2. **Change Colors**: Modify CSS variables in the HTML
+3. **Deploy**: Use gunicorn for production (see README)
+4. **Backup**: Save your `kairos_key.key` and `kairos_memory.json`
+
+## Quick Commands Reference
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run application
+python main.py
+
+# Run in production mode
+gunicorn -w 4 -b 0.0.0.0:5000 main:app
+
+# Check health
+curl http://localhost:5000/health
+```
+
+## Need Help?
+
+1. Check `kairos.log` for error messages
+2. Read the full `README.md`
+3. Verify your `.env` configuration
+4. Ensure all dependencies are installed
+
+---
+
+**⚡ You're ready to seek wisdom with Kairos! ⚡**
+
+Questions? Issues? Check the comprehensive README.md for detailed documentation.

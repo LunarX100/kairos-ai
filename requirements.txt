@@ -1,5 +1,23 @@
+# KAIROS - Celestial Mentor AI
+# Python Dependencies
+
+# Web Framework
 Flask==3.0.0
+Werkzeug==3.0.1
+
+# HTTP Requests
 requests==2.31.0
+
+# Encryption
 cryptography==41.0.7
+
+# Environment Variables
 python-dotenv==1.0.0
-PySocks==1.7.1
+
+# Optional: Production Server (recommended)
+gunicorn==21.2.0
+
+# Optional: Development tools
+# pytest==7.4.3
+# black==23.12.1
+# flake8==7.0.0
